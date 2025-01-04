@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "proxyme.fullname" . }}
+  labels:
+    {{- include "proxyme.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{.Values.socks5.port }}
+      protocol: TCP
+  selector:
+    {{- include "proxyme.selectorLabels" . | nindent 4 }}

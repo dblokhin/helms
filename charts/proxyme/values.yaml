@@ -1,0 +1,34 @@
+# app specific options
+socks5:
+  port: 1080
+  noauth: "true"
+#  users: "user:pass"
+
+service:
+  type: LoadBalancer
+  port: 1080
+
+# kubernetes options
+replicaCount: 1
+
+image:
+  repository: docker.io/dblokhin/proxyme
+  pullPolicy: IfNotPresent
+  tag: 0.2.2
+
+imagePullSecrets: []
+
+podAnnotations: {}
+podLabels: {}
+
+resources:
+  limits:
+    cpu: 5m
+    memory: 50Mi
+  requests:
+    cpu: 5m
+    memory: 20Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

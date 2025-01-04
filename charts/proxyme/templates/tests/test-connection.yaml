@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "proxyme.fullname" . }}-test-connection"
+  labels:
+    {{- include "proxyme.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: curl
+      image: alpine/curl
+      command: ["sh", "-c", "curl --socks5 {{ include "proxyme.fullname" . }}:{{ .Values.service.port }} -U ironman:DjgfhYhbSjrW https://google.com"]
+  restartPolicy: Never

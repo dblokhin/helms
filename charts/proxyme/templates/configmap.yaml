@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  PROXY_NOAUTH: {{.Values.socks5.noauth | quote }}
+  PROXY_USERS: {{.Values.socks5.users | quote }}
+kind: ConfigMap
+metadata:
+  name: {{.Chart.Name}}-{{.Release.Name}}-config
+  labels:
+    {{- include "proxyme.labels" . | nindent 4 }}
