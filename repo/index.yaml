@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   proxyme:
   - apiVersion: v2
+    appVersion: 0.2.3
+    created: "2025-01-15T00:21:48.402719+02:00"
+    description: A Helm chart for SOCKS5 Proxy server Proxyme
+    digest: e3dadc6ba8f79102bc6992247ac6271b501d19620c567dcc9a8734993d6c09b8
+    name: proxyme
+    type: application
+    urls:
+    - https://dblokhin.github.io/helms/repo/proxyme-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 0.2.2
-    created: "2025-01-04T14:11:27.805774+02:00"
+    created: "2025-01-15T00:21:48.402582+02:00"
     description: A Helm chart for SOCKS5 Proxy server Proxyme
     digest: d8292bd4f79b988c832d9b81168fd06407286f095902a31e0d58ad9fa757be16
     name: proxyme
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://dblokhin.github.io/helms/repo/proxyme-0.1.2.tgz
     version: 0.1.2
-generated: "2025-01-04T14:11:27.805546+02:00"
+generated: "2025-01-15T00:21:48.402147+02:00"
