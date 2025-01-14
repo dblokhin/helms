@@ -1,20 +1,15 @@
 # app specific options
 socks5:
-  port: 1080
   noauth: "true"
 #  users: "user:pass"
 
 service:
   type: LoadBalancer
   port: 1080
+#  nodePort: 0
 
 # kubernetes options
 replicaCount: 1
-
-image:
-  repository: docker.io/dblokhin/proxyme
-  pullPolicy: IfNotPresent
-  tag: 0.2.2
 
 imagePullSecrets: []
 

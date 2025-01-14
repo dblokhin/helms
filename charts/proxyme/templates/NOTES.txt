@@ -1,2 +1,2 @@
 To check proxy do something like:
-curl --socks5 <ip>:{{ .Values.socks5.port }} -U ironman:DjgfhYhbSjrW https://google.com
+curl --socks5 <ip>:<your port> -U user:pass https://google.com

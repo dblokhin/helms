@@ -28,7 +28,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       containers:
-      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+      - image: "docker.io/dblokhin/proxyme:{{ .Values.image.tag | default .Chart.AppVersion }}"
         name: {{ .Chart.Name }}
         env:
           - name: PROXY_NOAUTH
@@ -43,7 +43,7 @@ spec:
                 name: {{.Chart.Name}}-{{.Release.Name}}-config
         ports:
           - name: socks5
-            containerPort: {{ .Values.socks5.port }}
+            containerPort: 1080
             protocol: TCP
         startupProbe:
           tcpSocket:
