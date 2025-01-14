@@ -28,7 +28,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       containers:
-      - image: "docker.io/dblokhin/proxyme:{{ .Values.image.tag | default .Chart.AppVersion }}"
+      - image: "docker.io/dblokhin/proxyme:{{ .Chart.AppVersion }}"
         name: {{ .Chart.Name }}
         env:
           - name: PROXY_NOAUTH

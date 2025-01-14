@@ -3,7 +3,17 @@ entries:
   proxyme:
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2025-01-15T00:59:27.16683+02:00"
+    created: "2025-01-15T01:02:38.726189+02:00"
+    description: A Helm chart for SOCKS5 Proxy server Proxyme
+    digest: 705fbdf28d9b329ee8feb9c8ee49dba223638d0c270cbc2d6342cdddf025a358
+    name: proxyme
+    type: application
+    urls:
+    - https://dblokhin.github.io/helms/repo/proxyme-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 0.2.3
+    created: "2025-01-15T01:02:38.726079+02:00"
     description: A Helm chart for SOCKS5 Proxy server Proxyme
     digest: 1cdb523880f86e3817c9bbd8424c4fdab670cda4532ac9674701b59fac202d3b
     name: proxyme
@@ -13,7 +23,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2025-01-15T00:59:27.166708+02:00"
+    created: "2025-01-15T01:02:38.725958+02:00"
     description: A Helm chart for SOCKS5 Proxy server Proxyme
     digest: 194488b96bb471ac0f4f3d55b3e3a5865d256f195dcaa7d0c00ec865f180efe2
     name: proxyme
@@ -23,7 +33,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2025-01-15T00:59:27.166572+02:00"
+    created: "2025-01-15T01:02:38.725835+02:00"
     description: A Helm chart for SOCKS5 Proxy server Proxyme
     digest: e3dadc6ba8f79102bc6992247ac6271b501d19620c567dcc9a8734993d6c09b8
     name: proxyme
@@ -33,7 +43,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2025-01-15T00:59:27.166414+02:00"
+    created: "2025-01-15T01:02:38.725698+02:00"
     description: A Helm chart for SOCKS5 Proxy server Proxyme
     digest: d8292bd4f79b988c832d9b81168fd06407286f095902a31e0d58ad9fa757be16
     name: proxyme
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://dblokhin.github.io/helms/repo/proxyme-0.1.2.tgz
     version: 0.1.2
-generated: "2025-01-15T00:59:27.166166+02:00"
+generated: "2025-01-15T01:02:38.725469+02:00"
